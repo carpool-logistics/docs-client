@@ -1,0 +1,13 @@
+{
+    "name": "helium/docs-api-client",
+    "description": "The client package for Helium's Document Service for converting HTML to PDFs",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nick Rupert",
+            "email": "nick@heliumservices.com"
+        }
+    ],
+    "require": {}
+}
