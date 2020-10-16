@@ -1,5 +1,5 @@
 {
-    "name": "helium/docs-api-client",
+    "name": "helium/docs-client",
     "description": "The client package for Helium's Document Service for converting HTML to PDFs",
     "type": "library",
     "license": "MIT",
@@ -9,5 +9,21 @@
             "email": "nick@heliumservices.com"
         }
     ],
-    "require": {}
+    "require": {
+        "guzzlehttp/guzzle": "^6.0||^7.0",
+        "illuminate/support": "^5.8||^6.0||^7.0|^8.0",
+        "ext-dom": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Helium\\Docs\\Client\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Helium\\Docs\\Client\\Providers\\DocsClientServiceProvider"
+            ]
+        }
+    }
 }
